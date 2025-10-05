@@ -1,14 +1,24 @@
+:root {
+  --background: #f3efe7;     /* Sweater cream */
+  --text: #403c36;           /* Earthy brown */
+  --nav-bg: #7a6f60;         /* Taupe cardigan tone */
+  --nav-link: #f3efe7;       /* Cream contrast */
+  --panel: #b8afa3;          /* Soft grayish beige */
+  --brand-ink: #403c36;      /* Same as main text */
+  --focus: #dcd5c8;          /* Driftwood highlight */
+}
+
 body {
   font-family: Georgia, serif;
   margin: 0;
   padding: 0;
-  background: #fdfcf9;
-  color: #1a1a1a;
+  background: var(--background);
+  color: var(--text);
   line-height: 1.6;
 }
 
 header {
-  background: #332f2e;
+  background: var(--panel);
   color: #fff;
   padding: 2em;
   text-align: center;
@@ -31,15 +41,15 @@ section {
 }
 
 header h1, h2 {
-  color: #FFFFFF;
+  color: var(--brand-ink);
 }
 
 h1, h2 {
-  color: #2d2b2b;
+  color: var(--brand-ink);
 }
 
 a {
-  color: #6432a8;
+  color: var(--brand-ink);
   text-decoration: none;
 }
 
@@ -58,6 +68,70 @@ blockquote {
 footer {
   text-align: center;
   padding: 2em;
-  background: #eee;
+  background: var(--panel);
   font-size: 0.9em;
+}
+
+.hero {
+  border-bottom: 2px solid #dcd2c4;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Navigation */
+.nav {
+   position: sticky;
+  top: 0;
+  z-index: 1000; /* Optional, ensures it stays above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--nav-bg);
+  color: var(--nav-link);
+  padding: 1rem;
+  margin-bottom: 0rem;
+  margin-top: 0px;
+}
+
+.nav-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+}
+.nav-title a{
+    color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-title a:hover {
+  color: var(--focus);
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a{
+  text-decoration:none; color:var(--nav-link); padding:.4rem .7rem; border-radius:var(--radius-sm);
+}
+.nav-links a:hover{ background:var(--panel); color:var(--brand-ink); }
+.nav-links a:focus{ outline:3px solid var(--focus); outline-offset:2px; border-radius:6px; }
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
 }
