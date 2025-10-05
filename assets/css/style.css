@@ -50,11 +50,11 @@ h1, h2 {
 
 a {
   color: var(--brand-ink);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration:double;
 }
 
 blockquote {
