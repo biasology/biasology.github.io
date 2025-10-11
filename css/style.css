@@ -50,11 +50,11 @@ h1, h2 {
 
 a {
   color: var(--brand-ink);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration:double;
 }
 
 blockquote {
@@ -134,4 +134,14 @@ footer {
     gap: 0.5rem;
     margin-top: 1rem;
   }
+}
+
+.blocked {
+  border: 1px solid var(--brand-ink);
+  padding: 14px;
+  border-radius: 10px;
+}
+.blocked h3{
+  text-align: center;
+  margin-top: 2px;
 }
