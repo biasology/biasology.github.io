@@ -135,3 +135,13 @@ footer {
     margin-top: 1rem;
   }
 }
+
+.blocked {
+  border: 1px solid var(--brand-ink);
+  padding: 14px;
+  border-radius: 10px;
+}
+.blocked h3{
+  text-align: center;
+  margin-top: 2px;
+}
