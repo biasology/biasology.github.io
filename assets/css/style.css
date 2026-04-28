@@ -120,7 +120,7 @@ footer {
 .nav-links a{
   text-decoration:none; color:var(--nav-link); padding:.4rem .7rem; border-radius:var(--radius-sm);
 }
-.nav-links a:hover{ background:var(--panel); color:var(--brand-ink); }
+.nav-links a:hover, a:hover{ background:var(--panel); color:var(--brand-ink); }
 .nav-links a:focus{ outline:3px solid var(--focus); outline-offset:2px; border-radius:6px; }
 
 @media (max-width: 600px) {
