@@ -1,11 +1,18 @@
 :root {
-  --background: #f3efe7;     /* Sweater cream */
-  --text: #403c36;           /* Earthy brown */
-  --nav-bg: #7a6f60;         /* Taupe cardigan tone */
-  --nav-link: #f3efe7;       /* Cream contrast */
-  --panel: #b8afa3;          /* Soft grayish beige */
-  --brand-ink: #403c36;      /* Same as main text */
-  --focus: #dcd5c8;          /* Driftwood highlight */
+  --background: #f3efe7;
+  /* Sweater cream */
+  --text: #403c36;
+  /* Earthy brown */
+  --nav-bg: #7a6f60;
+  /* Taupe cardigan tone */
+  --nav-link: #f3efe7;
+  /* Cream contrast */
+  --panel: #b8afa3;
+  /* Soft grayish beige */
+  --brand-ink: #403c36;
+  /* Same as main text */
+  --focus: #dcd5c8;
+  /* Driftwood highlight */
 }
 
 body {
@@ -40,11 +47,13 @@ section {
   margin-bottom: 3em;
 }
 
-header h1, h2 {
+header h1,
+h2 {
   color: var(--brand-ink);
 }
 
-h1, h2 {
+h1,
+h2 {
   color: var(--brand-ink);
 }
 
@@ -54,7 +63,7 @@ a {
 }
 
 a:hover {
-  text-decoration:double;
+  text-decoration: double;
 }
 
 blockquote {
@@ -80,9 +89,10 @@ footer {
 
 /* Navigation */
 .nav {
-   position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 1000; /* Optional, ensures it stays above other content */
+  z-index: 1000;
+  /* Optional, ensures it stays above other content */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,15 +110,18 @@ footer {
   font-weight: bold;
 
 }
-.nav-title a{
-    color: white;
+
+.nav-title a {
+  color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
+
 .nav-title a:hover {
   color: var(--focus);
 }
+
 .nav-links {
   list-style: none;
   padding: 0;
@@ -117,11 +130,24 @@ footer {
   gap: 1rem;
 }
 
-.nav-links a{
-  text-decoration:none; color:var(--nav-link); padding:.4rem .7rem; border-radius:var(--radius-sm);
+.nav-links a {
+  text-decoration: none;
+  color: var(--nav-link);
+  padding: .4rem .7rem;
+  border-radius: var(--radius-sm);
 }
-.nav-links a:hover, a:hover{ background:var(--panel); color:var(--brand-ink); }
-.nav-links a:focus{ outline:3px solid var(--focus); outline-offset:2px; border-radius:6px; }
+
+.nav-links a:hover,
+a:hover {
+  background: var(--panel);
+  color: var(--brand-ink);
+}
+
+.nav-links a:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
 
 .video-embed {
   position: relative;
@@ -149,6 +175,10 @@ footer {
     gap: 0.5rem;
     margin-top: 1rem;
   }
+
+  main {
+    padding: 1em;
+  }
 }
 
 .blocked {
@@ -156,7 +186,8 @@ footer {
   padding: 14px;
   border-radius: 10px;
 }
-.blocked h3{
+
+.blocked h3 {
   text-align: center;
   margin-top: 2px;
 }
