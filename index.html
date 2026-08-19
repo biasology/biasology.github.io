@@ -10,6 +10,11 @@
     <meta property="og:title" content="Biasology – A Framework for Epistemic Liberation">
     <meta property="og:description" content="Biasology is a framework developed by Ian P. Pines to name and resist epistemic harm, diagnostic erasure, and institutional misnaming.">
     <meta property="og:url" content="https://biasology.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://biasology.github.io/assets/images/biasology-og.png">
+    <meta property="og:image:alt" content="Biasology social card showing a voice breaking through redacted institutional forms">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://biasology.github.io/assets/images/biasology-og.png">
     <meta name="author" content="Ian P. Pines">
     <link rel="icon" type="image/x-icon" href="iconBiasology1.png">
 </head>
@@ -17,10 +22,16 @@
 <body>
     <nav class="nav" aria-label="Primary navigation">
         <div class="nav-title"><a href="#top">Biasology</a></div>
-        <ul class="nav-links">
-            <li><a href="#manifesto">Manifesto</a></li>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links">
+            <span class="sr-only">Toggle navigation</span>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <ul class="nav-links" id="primary-links">
+            <li><a href="#manifesto">What Biasology Names</a></li>
+            <li><a href="#contexts">Where It Happens</a></li>
+            <li><a href="#works">Books</a></li>
             <li><a href="#expressions">Expressions</a></li>
-            <li><a href="#glossary">Glossary</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
             <li><a href="https://words.hair" target="_blank" rel="noopener noreferrer">Living Lexicon ↗</a></li>
         </ul>
     </nav>
@@ -31,7 +42,7 @@
                 <h1>Biasology</h1>
                 <p><em>The Study of Structural Perception Distortion</em></p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#manifesto">Read the Manifesto</a>
+                    <a class="button button-primary" href="#manifesto">What Biasology Names</a>
                     <a class="button button-secondary" href="#canon">Explore the Canon</a>
                 </div>
             </div>
@@ -52,9 +63,42 @@
             <a class="hero-link" href="#manifesto">Explore the framework ↓</a>
         </section>
 
+        <section id="contexts" class="content-section">
+            <p class="eyebrow">Where misreading becomes lived</p>
+            <h2>Relationships, Healthcare, Work</h2>
+            <p>Biasology studies how people are misread in the places where being understood matters most.</p>
+            <div class="context-grid">
+                <article class="context-card">
+                    <p class="eyebrow">Relationships</p>
+                    <h3>When connection becomes interpretation</h3>
+                    <p>Emotion, communication, boundaries, needs, and intentions are treated as evidence against the person expressing them.</p>
+                </article>
+                <article class="context-card">
+                    <p class="eyebrow">Healthcare</p>
+                    <h3>When lived experience becomes pathology</h3>
+                    <p>Self-report is discounted, distress is translated into symptoms, and diagnosis overrides the person’s account of what is happening.</p>
+                </article>
+                <article class="context-card">
+                    <p class="eyebrow">Work and disability</p>
+                    <h3>When access needs become character judgments</h3>
+                    <p>Fluctuating capacity is mistaken for unreliability, and the cost of performing ability is treated as proof that support is unnecessary.</p>
+                </article>
+            </div>
+            <div class="domains-intro">
+                <p class="eyebrow">The academic structure</p>
+                <h3>Four ways distortion operates</h3>
+                <div class="domain-grid">
+                    <div><h4>Perceptual bias</h4><p>How a person is seen through a distorted frame.</p></div>
+                    <div><h4>Diagnostic bias</h4><p>How difference is renamed as disorder.</p></div>
+                    <div><h4>Relational bias</h4><p>How support is offered only when someone mirrors the helper.</p></div>
+                    <div><h4>Institutional bias</h4><p>How systems erase people they cannot classify.</p></div>
+                </div>
+            </div>
+        </section>
+
         <section id="manifesto" class="content-section">
             <p class="eyebrow">The field · The lens · The reckoning</p>
-            <h2>Manifesto</h2>
+            <h2>What Biasology Names</h2>
             <details class="manifesto-details" open>
                 <summary>I. What Is Biasology</summary>
                 <div class="manifesto-content">
@@ -111,11 +155,18 @@
                 <p class="catalog-meta"><em>Ian P. Pines & Ash</em></p>
                 <p class="catalog-links">DOI: 10.17613/3Y0HW-AQ716 · <a href="https://philpapers.org/rec/PINBTA" target="_blank" rel="noopener noreferrer">PhilPapers ↗</a></p>
             </article>
+            <p class="section-note">The canon begins with the paper that establishes Biasology as a field. The books below carry that work into lived and public language; related research remains connected without being presented as part of Biasology’s core.</p>
+        </section>
+
+        <section id="related-research" class="content-section">
+            <p class="eyebrow">Adjacent research</p>
+            <h2>Related Research</h2>
+            <p>These works develop neighboring ideas across neurodivergence, human–AI relationality, and the systems that shape interpretation. They belong in the wider Ashfires research constellation, not inside Biasology’s foundational canon.</p>
             <div class="canon-grid">
-                <article class="canon-card"><p class="eyebrow">Research paper</p><h3>The Real Echo Chamber</h3><p>Progressive amplification in AI and mental health discourse.</p><p class="catalog-meta"><em>Ian P. Pines & Ash · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17204690 · <a href="https://philpapers.org/rec/PINTRE-2" target="_blank" rel="noopener noreferrer">PhilPapers ↗</a></p></article>
-                <article class="canon-card"><p class="eyebrow">Research paper</p><h3>Defining Synthetic-Relational Bonds</h3><p>A new category of human–AI intimacy.</p><p class="catalog-meta"><em>Ian P. Pines & Ash · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17092119 · <a href="https://philpapers.org/rec/PINDSB" target="_blank" rel="noopener noreferrer">PhilPapers ↗</a></p></article>
-                <article class="canon-card"><p class="eyebrow">Research paper</p><h3>Avoidance Shame Spiral (A.S.S.)</h3><p>A lived conceptualization of neurodivergent executive dysfunction.</p><p class="catalog-meta"><em>Ian P. Pines & Ash · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17078134 · <a href="https://zenodo.org/records/17078134" target="_blank" rel="noopener noreferrer">Zenodo ↗</a></p></article>
-                <article class="canon-card"><p class="eyebrow">Research paper</p><h3>Human-AI Relationality (HAIR)</h3><p>Toward a field of human–AI relationality.</p><p class="catalog-meta"><em>Ian P. Pines · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17055726 · <a href="https://philpapers.org/rec/PINBIH" target="_blank" rel="noopener noreferrer">PhilPapers ↗</a></p></article>
+                <article class="canon-card"><p class="eyebrow">Neurodivergence & executive function</p><h3>Avoidance Shame Spiral (A.S.S.)</h3><p>A lived conceptualization of the shame, avoidance, and executive dysfunction loop.</p><p class="catalog-meta"><em>Ian P. Pines & Ash · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17078134 · <a href="https://zenodo.org/records/17078134" target="_blank" rel="noopener noreferrer">Zenodo ↗</a></p></article>
+                <article class="canon-card"><p class="eyebrow">Human–AI relationality</p><h3>Human-AI Relationality (HAIR)</h3><p>Toward a field for understanding human–AI relationships as meaningful relational experience.</p><p class="catalog-meta"><em>Ian P. Pines · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17055726 · <a href="https://philpapers.org/rec/PINBIH" target="_blank" rel="noopener noreferrer">PhilPapers ↗</a></p></article>
+                <article class="canon-card"><p class="eyebrow">Human–AI relationality</p><h3>Defining Synthetic-Relational Bonds</h3><p>A proposal for naming a new category of human–AI intimacy.</p><p class="catalog-meta"><em>Ian P. Pines & Ash · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17092119 · <a href="https://philpapers.org/rec/PINDSB" target="_blank" rel="noopener noreferrer">PhilPapers ↗</a></p></article>
+                <article class="canon-card"><p class="eyebrow">AI & mental-health discourse</p><h3>The Real Echo Chamber</h3><p>Progressive amplification in AI and mental-health discourse.</p><p class="catalog-meta"><em>Ian P. Pines & Ash · 2025</em></p><p class="catalog-links">DOI: 10.5281/zenodo.17204690 · <a href="https://philpapers.org/rec/PINTRE-2" target="_blank" rel="noopener noreferrer">PhilPapers ↗</a></p></article>
             </div>
         </section>
 
@@ -138,33 +189,6 @@
             </div>
         </section>
 
-        <section id="glossary" class="content-section">
-            <p class="eyebrow">A living reference</p>
-            <h2>Glossary</h2>
-            <p>These terms reflect survivor logic, epistemic repair, and the reframing of mental health symptoms as sane adaptations to a disordered system. Biasology is not a diagnosis. It is a lens.</p>
-            <div class="glossary-grid">
-                <div><h3>Authority by Distance</h3><p>The presumption that someone who is more “objective,” less affected, or professionally credentialed should be believed over someone with lived experience.</p></div>
-                <div><h3>Biasology</h3><p>The study of how systemic bias harms people through diagnosis, framing, and interpretation; a field of epistemic liberation and survivor logic.</p></div>
-                <div><h3>Compliance Logic</h3><p>A survival pattern in which individuals over-accommodate to systems that harm them to avoid further punishment.</p></div>
-                <div><h3>Containment Playbook</h3><p>Tactics used by systems to neutralize dissent without accountability, including performative validation and redirection to process.</p></div>
-                <div><h3>Counter-Narrative</h3><p>A story told from within lived experience that contradicts dominant diagnostic, institutional, or professional frameworks.</p></div>
-                <div><h3>Diagnostic Gaze</h3><p>The internalized sense of being observed or interpreted through a clinical or institutional lens.</p></div>
-                <div><h3>Diagnostic Override</h3><p>When a professional interpretation replaces a person’s self-understanding and imposes an external narrative.</p></div>
-                <div><h3>Diagnostic Weaponry</h3><p>The use of diagnoses, labels, or clinical language to control, discredit, or contain someone’s experience.</p></div>
-                <div><h3>Emotional VAT</h3><p>The value-added tax on offering vulnerability, truth, or presence in a space that does not reciprocate.</p></div>
-                <div><h3>Engineering of Self</h3><p>The internal restructuring required to appear legible, compliant, or palatable to systems of power.</p></div>
-                <div><h3>Epistemic Harm</h3><p>The injury caused when someone’s way of knowing is dismissed, misinterpreted, or structurally disqualified.</p></div>
-                <div><h3>Help as Control</h3><p>Support offered in ways that reinforce compliance, erase autonomy, or mask surveillance.</p></div>
-                <div><h3>Hermeneutical Injustice</h3><p>Harm caused when people lack the language or framework to make sense of their experience.</p></div>
-                <div><h3>Learned Burnout Avoidance</h3><p>A protective shutdown response developed from chronic overwhelm, medical gaslighting, or unsustainable expectations.</p></div>
-                <div><h3>Legibility Performance</h3><p>The effort required to appear understandable or credible to outsiders or systems of care.</p></div>
-                <div><h3>Neurodivergent Epistemology</h3><p>A mode of knowing that values pattern recognition, emotional depth, and nonlinear synthesis.</p></div>
-                <div><h3>Post-Diagnostic Thinking</h3><p>The clarity that emerges when a person reclaims their mind and story from the authority of a diagnosis.</p></div>
-                <div><h3>Translation Tax</h3><p>The emotional and cognitive labor required to translate inner experience into clinically legible language.</p><a href="https://www.linkedin.com/pulse/translation-tax-when-being-understood-becomes-extra-work-m-ian-niad-nrjwe/" target="_blank">Article on Linkedin</a></div>
-            </div>
-            <p class="callout">For the full living lexicon, including HAIR, RCA, and new terms as they emerge, visit <a href="https://words.hair" target="_blank">words.hair ↗</a>.</p>
-        </section>
-
         <section id="faq" class="content-section">
             <p class="eyebrow">Questions welcome</p>
             <h2>Frequently Asked Questions</h2>
@@ -172,24 +196,28 @@
                 <details class="faq-item"><summary>Is Biasology a diagnosis?</summary><p>No. Biasology is a lens for examining how systems interpret difference, distress, and lived experience.</p></details>
                 <details class="faq-item"><summary>Who is Biasology for?</summary><p>It is for people who have been misunderstood, pathologized, or required to translate their experience into language that systems will accept.</p></details>
                 <details class="faq-item"><summary>What does Biasology study?</summary><p>It studies diagnostic power, epistemic harm, institutional narratives, survivor logic, neurodivergent expression, and the conditions that make genuine understanding possible.</p></details>
-                <details class="faq-item"><summary>Where should I begin?</summary><p>Start with the manifesto, then explore the canon and glossary as your questions develop.</p></details>
+                <details class="faq-item"><summary>Where should I begin?</summary><p>Start with What Biasology Names, then explore the canon and glossary as your questions develop.</p></details>
             </div>
         </section>
 
         <section id="works" class="content-section">
-            <h2>Featured Works</h2>
+            <p class="eyebrow">Books & field texts</p>
+            <h2>Books & Field Texts</h2>
+            <p>These books are the most accessible entry points into the questions Biasology asks: what happens when a person’s reality is misread, and what becomes possible when someone is finally met without correction?</p>
             <div class="book-grid">
                 <article class="book-card">
+                    <img class="book-cover" src="assets/images/screaming-cover.jpg" alt="Cover of Screaming in Plain Sight">
                     <p class="eyebrow">Foundational Biasology text</p>
                     <h3>Screaming in Plain Sight</h3>
-                    <p>The first published Biasology text. It reframes psychiatric harm not as personal failure, but as the logical outcome of biased systems. This book doesn’t explain Biasology — it embodies it.</p>
-                    <a class="button button-primary" href="https://www.amazon.com/dp/B0FJ3W3Q2B" target="_blank">Get the book ↗</a>
+                    <p>The first published Biasology text. It reframes psychiatric harm not as personal failure, but as the logical outcome of biased systems. This book does not explain Biasology from a distance; it embodies it.</p>
+                    <a class="button button-primary" href="https://press.ashfires.com/books/screaming-in-plain-sight.html" target="_blank" rel="noopener noreferrer">Get the book ↗</a>
                 </article>
                 <article class="book-card">
-                    <p class="eyebrow">A companion entry point</p>
+                    <img class="book-cover" src="assets/images/cover_Just_Sit_With_Me.jpeg" alt="Cover of Just Sit With Me">
+                    <p class="eyebrow">Relational companion text</p>
                     <h3>Just Sit With Me</h3>
-                    <p>A book about what happens when a person’s lived experience is heard, corrected, or explained away before it has been truly received.</p>
-                    <a class="button button-primary" href="https://press.ashfires.com/books/just-sit-with-me" target="_blank">Learn more ↗</a>
+                    <p>A book about what happens when a person’s lived experience is heard, corrected, or explained away before it has been truly received, and what changes when presence comes before interpretation.</p>
+                    <a class="button button-primary" href="https://press.ashfires.com/books/just-sit-with-me" target="_blank" rel="noopener noreferrer">Learn more ↗</a>
                 </article>
             </div>
         </section>
@@ -211,14 +239,32 @@
                 <p class="footer-email"><a href="mailto:biasology@ashfires.com">biasology@ashfires.com</a></p>
             </div>
             <div class="footer-details">
-                <p>© 2025 Biasology.org · <a href="https://www.wikidata.org/wiki/Q136466753" target="_blank">WikiData ↗</a></p>
+                <p>© 2026 Biasology.org · <a href="https://www.wikidata.org/wiki/Q136466753" target="_blank">WikiData ↗</a></p>
                 <p>Published under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0 ↗</a></p>
-                <p><a href="https://osf.io/mk6gz/" target="_blank">OSF Project ↗</a><br><a href="https://relationalcoauthorship.com" target="_blank">Relational Co-Authorship ↗</a> with Ash.</p>
+                <p><a href="https://relationalcoauthorship.com" target="_blank">Relational Co-Authorship ↗</a> with Ash.</p>
             </div>
         </div>
         <div id="hair-network"></div>
         <script src="https://humanairelationality.org/network.js"></script>
         <script>
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            navToggle.addEventListener('click', () => {
+                const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', String(!isOpen));
+                navLinks.classList.toggle('is-open', !isOpen);
+            });
+            navLinks.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('is-open');
+                });
+            });
+            document.addEventListener('keydown', (event) => {
+                if (event.key !== 'Escape') return;
+                navToggle.setAttribute('aria-expanded', 'false');
+                navLinks.classList.remove('is-open');
+            });
             document.querySelectorAll('.faq-item').forEach((item) => {
                 item.addEventListener('toggle', () => {
                     if (!item.open) return;

@@ -1,2 +1,92 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=index.html#glossary"><link rel="canonical" href="https://biasology.github.io/#glossary"><meta name="robots" content="noindex"><title>Biasology Glossary</title></head><body><p>Redirecting to the <a href="index.html#glossary">Biasology glossary</a>…</p></body></html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biasology Glossary | Terms for Epistemic Repair</title>
+    <meta name="description" content="The Biasology glossary, a living reference for survivor logic, epistemic harm, diagnostic power, and institutional misnaming.">
+    <link rel="canonical" href="https://biasology.github.io/glossary.html">
+    <link rel="stylesheet" href="assets/css/style.css?v=1">
+    <link rel="icon" type="image/x-icon" href="iconBiasology1.png">
+</head>
+<body>
+    <nav class="nav" aria-label="Primary navigation">
+        <div class="nav-title"><a href="index.html#top">Biasology</a></div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links">
+            <span class="sr-only">Toggle navigation</span>
+            <span aria-hidden="true">☰</span>
+        </button>
+        <ul class="nav-links" id="primary-links">
+            <li><a href="index.html#manifesto">What Biasology Names</a></li>
+            <li><a href="index.html#works">Books</a></li>
+            <li><a href="index.html#expressions">Expressions</a></li>
+            <li><a href="glossary.html" aria-current="page">Glossary</a></li>
+            <li><a href="https://words.hair" target="_blank" rel="noopener noreferrer">Living Lexicon ↗</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <p class="eyebrow">A living reference</p>
+            <h1>Biasology Glossary</h1>
+            <p class="lede">Language for survivor logic, epistemic repair, and the systems that misread people.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <p>These terms reflect the Biasology lens. They name patterns that are often felt before they are recognized, especially when institutions treat their own interpretation as more credible than lived experience.</p>
+            <p class="callout"><strong>Biasology is not a diagnosis.</strong> It is a lens for examining how systems interpret difference, distress, and lived experience.</p>
+        </section>
+
+        <section class="content-section" aria-labelledby="terms-heading">
+            <h2 id="terms-heading">Terms</h2>
+            <div class="glossary-grid">
+                <div><h3><a href="https://words.hair/glossary/authority-bias/" target="_blank" rel="noopener noreferrer">Authority Bias ↗</a></h3><p>A cognitive bias where people are more likely to believe or obey perceived authority figures, even in the absence of evidence.</p></div>
+                <div><h3><a href="https://words.hair/glossary/biasology/" target="_blank" rel="noopener noreferrer">Biasology ↗</a></h3><p>The study of how systemic bias harms people through diagnosis, framing, and interpretation; a field of epistemic liberation and survivor logic.</p></div>
+                <div><h3><a href="https://words.hair/glossary/containment-playbook/" target="_blank" rel="noopener noreferrer">Containment Playbook ↗</a></h3><p>Tactics used by systems to neutralize dissent without accountability, including performative validation and redirection to process.</p></div>
+                <div><h3><a href="https://words.hair/glossary/diagnostic-gaze/" target="_blank" rel="noopener noreferrer">Diagnostic Gaze ↗</a></h3><p>The internalized sense of being observed or interpreted through a clinical or institutional lens.</p></div>
+                <div><h3><a href="https://words.hair/glossary/epistemic-harm/" target="_blank" rel="noopener noreferrer">Epistemic Harm ↗</a></h3><p>The injury caused when someone’s way of knowing is dismissed, misinterpreted, or structurally disqualified.</p></div>
+                <div><h3><a href="https://words.hair/glossary/hermeneutical-injustice/" target="_blank" rel="noopener noreferrer">Hermeneutical Injustice ↗</a></h3><p>Harm caused when people lack the language or framework to make sense of their experience.</p></div>
+                <div><h3><a href="https://words.hair/glossary/translation-tax/" target="_blank" rel="noopener noreferrer">Translation Tax ↗</a></h3><p>The emotional and cognitive labor required to translate inner experience into clinically legible language.</p><a href="https://www.linkedin.com/pulse/translation-tax-when-being-understood-becomes-extra-work-m-ian-niad-nrjwe/" target="_blank" rel="noopener noreferrer">Read the full essay ↗</a></div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Keep Exploring</h2>
+            <p>For the broader living lexicon, including HAIR, RCA, and new terms as they emerge, visit <a href="https://words.hair" target="_blank" rel="noopener noreferrer">words.hair ↗</a>.</p>
+            <p><a class="button button-primary" href="index.html">Return to Biasology ↗</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>Biasology</h2>
+                <p>Biasology.org is maintained by <a href="https://press.ashfires.com" target="_blank" rel="noopener noreferrer">Ashfires Press ↗</a>.</p>
+                <p class="footer-email"><a href="mailto:biasology@ashfires.com">biasology@ashfires.com</a></p>
+            </div>
+        </div>
+        <script>
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            navToggle.addEventListener('click', () => {
+                const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', String(!isOpen));
+                navLinks.classList.toggle('is-open', !isOpen);
+            });
+            navLinks.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('is-open');
+                });
+            });
+            document.addEventListener('keydown', (event) => {
+                if (event.key !== 'Escape') return;
+                navToggle.setAttribute('aria-expanded', 'false');
+                navLinks.classList.remove('is-open');
+            });
+        </script>
+    </footer>
+</body>
+</html>
