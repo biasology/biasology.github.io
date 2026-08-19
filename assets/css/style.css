@@ -156,6 +156,10 @@ a:hover { text-decoration: double; }
 .book-card .button { align-self: flex-start; margin-top: auto; }
 
 .essay-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.essay-featured { margin: 1.5rem 0; padding: clamp(1.5rem, 4vw, 2.5rem); border-radius: var(--radius); background: var(--nav-bg); color: var(--nav-link); }
+.essay-featured h3 { max-width: 720px; margin: .25rem 0 .75rem; color: var(--nav-link); font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.2; }
+.essay-featured .eyebrow { color: var(--focus); }
+.essay-featured a { color: var(--nav-link); font-weight: 700; }
 .essay-card { display: flex; flex-direction: column; padding: 1.25rem; border: 1px solid #d2c8b8; border-radius: var(--radius); background: #f7f3eb; }
 .essay-card .eyebrow { margin-top: 0; font-size: .68rem; }
 .essay-card h3 { margin: .25rem 0 .75rem; font-size: 1.2rem; line-height: 1.25; }
